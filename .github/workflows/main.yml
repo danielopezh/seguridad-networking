@@ -27,4 +27,4 @@ jobs:
       - name: Deploy files
         run: |
           oc project daniel-lopez-fisa-dev
-          oc apply -f ./
+          oc apply -f ./ --recursive --exclude='kubeconfig.yaml'
