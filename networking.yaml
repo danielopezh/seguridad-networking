@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: allow-micro-a-to-micro-b
+  name: allow-micro-a-to-micro-b-egress
   namespace: daniel-lopez-fisa-dev
 spec:
   podSelector:
@@ -21,7 +21,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: allow-micro-a-to-micro-b
+  name: allow-micro-a-to-micro-b-ingress
   namespace: daniel-lopez-fisa-dev
 spec:
   podSelector:
