@@ -27,5 +27,5 @@ jobs:
       - name: Deploy files
         run: |
           oc project daniel-lopez-fisa-dev
-          oc apply private.yaml
-          oc apply public.yaml
+          oc apply -f private.yaml
+          oc apply -f public.yaml
