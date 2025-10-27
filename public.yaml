@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: allow-ingress-to-micro-a
-  namespace: adonis-paz-dev
+  namespace: daniel-lopez-fisa-dev
 spec:
   podSelector:
     matchLabels:
